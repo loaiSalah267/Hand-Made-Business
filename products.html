@@ -1,0 +1,2225 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
+    <title>products</title>
+    <link rel="icon" type="image/png" href="./images/Logoo.ico" />
+    <style>
+        * {
+            margin: 0px;
+            -webkit-box-sizing: border-box;
+            -mozkir-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: 'Roboto';
+        }
+
+        /*Start Header*/
+        .header {
+            background: url('images/banana-leaf-with-tropical-palm-leaf-yellow-background-copy-space_51524-7389.jpg') no-repeat center top;
+            background-size: cover;
+            width: 100%;
+            height: 560px;
+        }
+
+        .headTop {
+            width: 100%;
+            height: 80px;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .headTop h1 {
+            margin: 0px;
+            color: #FFF;
+            width: 31%;
+            display: inline-block;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 28px;
+            padding: 5px;
+        }
+
+        .headTop ul {
+            width: 67%;
+            height: 52px;
+            text-align: right;
+            float: right;
+            color: #FFF;
+        }
+
+        .headTop ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .headTop ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+
+        .header .overlay span {
+            width: 48px;
+            height: 48px;
+            color: #C5A059;
+            position: fixed;
+            right: 30px;
+            bottom: 20px;
+            display: none;
+            cursor: pointer;
+        }
+
+        .headMid {
+            width: 65%;
+            margin: 170px auto;
+            color: #FFF;
+            text-align: center;
+        }
+
+        .headMid h1 {
+            font-size: 55px;
+            font-weight: 100;
+            margin: 20px;
+        }
+
+        .headMid h2 {
+            width: 240px;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #FFF;
+            font-weight: 100;
+            display: inline-block;
+        }
+
+        @media (min-width:420px) and (max-width: 749px)
+
+        /*mobile and tablets rules*/
+            {
+            .header {
+                background: url('images/Banner.jpg') no-repeat center top;
+                background-size: cover;
+                width: 100%;
+                height: 560px;
+            }
+
+            .headTop {
+                width: 100%;
+                height: 120px;
+                padding: 20px;
+                overflow: hidden;
+            }
+
+            .headTop h1 {
+                text-align: center;
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            .headTop form {
+                width: 100%;
+            }
+
+            .headTop form select {
+                width: 100%;
+                height: 35px;
+                color: #FFF;
+                font-weight: 100;
+                background-color: #333;
+            }
+
+            .headMid {
+                width: 64%;
+                margin: 170px auto;
+                color: #FFF;
+                text-align: center;
+            }
+
+            .headMid h1 {
+                font-size: 55px;
+                font-weight: 100;
+                margin: 20px;
+            }
+
+            .headMid h2 {
+                width: 240px;
+                text-align: center;
+                padding: 10px;
+                border: 1px solid #FFF;
+                font-weight: 100;
+                display: inline-block;
+            }
+
+            .hidden-xs {
+                display: none;
+            }
+
+            .visiable-xs {
+                display: block;
+            }
+        }
+
+        @media (min-width:750px) and (max-width:991px)
+
+        /*small screen rules*/
+            {
+            .header {
+                background: url('images/Banner.jpg') no-repeat center top;
+                background-size: cover;
+                width: 100%;
+                height: 560px;
+            }
+
+            .headTop {
+                width: 100%;
+                height: 80px;
+                padding: 20px;
+                overflow: hidden;
+            }
+
+            .headTop h1 {
+                text-align: center;
+                width: 40%;
+                margin-bottom: 15px;
+            }
+
+            .headTop form {
+                width: 50%;
+                float: right;
+            }
+
+            .headTop form select {
+                width: 50%;
+                height: 35px;
+                color: #FFF;
+                float: right;
+                font-weight: 100;
+                background-color: #333;
+            }
+
+            .headMid {
+                width: 50%;
+                margin: 170px auto;
+                color: #FFF;
+                text-align: center;
+            }
+
+            .headMid h1 {
+                font-size: 55px;
+                font-weight: 100;
+                margin: 20px;
+            }
+
+            .headMid h2 {
+                width: 240px;
+                text-align: center;
+                padding: 10px;
+                border: 1px solid #FFF;
+                font-weight: 100;
+                display: inline-block;
+            }
+
+            .visiable-xs {
+                display: block;
+            }
+
+            .hidden-xs {
+                display: none;
+            }
+        }
+
+        @media (min-width:992px)
+
+        /*mediam screen rules*/
+            {
+            .header {
+                background: url('images/Banner.jpg') no-repeat center top;
+                background-size: cover;
+                width: 100%;
+                height: 560px;
+            }
+
+            .headTop {
+                width: 100%;
+                height: 80px;
+                padding: 20px;
+                overflow: hidden;
+            }
+
+            .headTop h1 {
+                margin: 0px;
+                color: #FFF;
+                width: 22%;
+                display: inline-block;
+                font-weight: 100;
+            }
+
+            .headTop ul {
+                width: 78%;
+                height: 52px;
+                text-align: right;
+                float: right;
+                color: #FFF;
+            }
+
+            .headTop ul li {
+                list-style-type: none;
+                display: inline-block;
+                padding: 10px;
+            }
+
+            .headMid {
+                width: 50%;
+                margin: 170px auto;
+                color: #FFF;
+                text-align: center;
+            }
+
+            .headMid h1 {
+                font-size: 55px;
+                font-weight: 100;
+                margin: 20px;
+            }
+
+            .headMid h2 {
+                width: 240px;
+                text-align: center;
+                padding: 10px;
+                border: 1px solid #FFF;
+                font-weight: 100;
+                display: inline-block;
+            }
+
+            .visiable-xs {
+                display: none;
+            }
+        }
+
+        @media (min-width:1200px)
+
+        /*large screen rules*/
+            {
+            .header {
+                background: url('images/Banner.jpg') no-repeat center top;
+                background-size: cover;
+                width: 100%;
+                height: 560px;
+            }
+
+            .headTop {
+                width: 100%;
+                height: 80px;
+                padding: 20px;
+                overflow: hidden;
+            }
+
+            .headTop h1 {
+                margin: 0px;
+                color: #FFF;
+                width: 31%;
+                display: inline-block;
+                font-weight: 400;
+                text-transform: uppercase;
+                font-size: 28px;
+                padding: 5px;
+            }
+
+            .headTop ul {
+                width: 67%;
+                height: 52px;
+                text-align: right;
+                float: right;
+                color: #FFF;
+            }
+
+            .headTop ul li {
+                list-style-type: none;
+                display: inline-block;
+                padding: 10px;
+            }
+
+            .headMid {
+                width: 50%;
+                margin: 170px auto;
+                color: #FFF;
+                text-align: center;
+            }
+
+            .headMid h1 {
+                font-size: 55px;
+                font-weight: 100;
+                margin: 20px;
+            }
+
+            .headMid h2 {
+                width: 240px;
+                text-align: center;
+                padding: 10px;
+                border: 1px solid #FFF;
+                font-weight: 100;
+                display: inline-block;
+            }
+
+            .visiable-xs {
+                display: none;
+            }
+        }
+
+        /*End Header*/
+        /*start products*/
+        @media (min-width:420px) and (max-width:749px) {
+            .products {
+                width: 100%;
+                height: 2755px;
+                padding-top: 0px;
+            }
+
+            .products h1 {
+                width: 100%;
+                text-align: center;
+                font-size: 60px;
+            }
+
+            .mainProduct {
+                width: 100%;
+                height: 830px;
+            }
+
+            .products .product {
+                width: 100%;
+                height: 450px;
+                color: #000;
+                margin: 0px 20px 30px 0px;
+            }
+
+            .products .product .img {
+                width: 100%;
+                height: 292px;
+            }
+
+            .products .product .img img {
+                width: 100% !important;
+            }
+
+            .products .product h3 {
+                display: block;
+                text-align: center;
+                font-size: 25px;
+                font-weight: 100;
+                line-height: 1.2;
+                padding: 20px;
+            }
+
+            .product span {
+                width: 150px !important;
+                height: 50px !important;
+                padding: 10px;
+                text-align: center;
+                border: 1px solid #000;
+                display: block;
+                margin: auto;
+                font-size: 20px;
+                text-transform: capitalize;
+                font-weight: 100;
+            }
+
+            .one {
+                width: 100%;
+                height: 350px !important;
+            }
+
+            .one .img {
+                width: 100% !important;
+                height: 225px !important;
+            }
+
+            .one .img img {
+                width: 100% !important;
+                height: 225px !important;
+            }
+
+            .four {
+                width: 100% !important;
+                height: 350px !important;
+            }
+
+            .four .img {
+                width: 100% !important;
+                height: 225px !important;
+            }
+
+            .four .img img {
+                width: 100% !important;
+                height: 225px !important;
+            }
+
+            .popup {
+                width: 100%;
+                background-color: #444444;
+                position: absolute;
+                z-index: 99999;
+                height: 2760px;
+                opacity: .89;
+                display: none;
+            }
+
+            .pop {
+                width: 350px;
+                background-color: #777777;
+                position: fixed;
+                top: 200px;
+                z-index: 999;
+                opacity: 1;
+                margin: auto 70px;
+                height: 210px;
+                border-radius: 50px;
+            }
+
+            .pop h2 {
+                color: #FFF;
+                font-size: 30px;
+                padding: 30px;
+                font-weight: 100;
+                line-height: 1.2;
+            }
+
+            .pop .close {
+                width: 30%;
+                height: 40px;
+                margin: auto 120px;
+                border-radius: 50px;
+                border: none;
+                font-size: 20px;
+                font-weight: 100;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+        }
+
+        @media(min-width: 750px) {
+            .products {
+                width: 100%;
+                height: 830px;
+                padding-top: 80px;
+            }
+
+            .products h1 {
+                width: 100%;
+                text-align: center;
+                font-size: 60px;
+            }
+
+            .products .product {
+                width: 30%;
+                height: 267px;
+                color: #000;
+                margin: 0px 20px 30px 0px;
+                float: left;
+            }
+
+            .products .product .img {
+                width: 100%;
+                height: 225px;
+            }
+
+            .products .product .img img {
+                width: 100% !important;
+            }
+
+            .products .product h3 {
+                display: block;
+                text-align: center;
+                font-size: 21px;
+                font-weight: 100;
+                line-height: 1.2;
+                padding: 20px;
+            }
+
+            .product span {
+                width: 150px;
+                height: 50px;
+                padding: 10px;
+                text-align: center;
+                border: 1px solid #000;
+                display: block;
+                margin: auto;
+                font-size: 20px;
+                text-transform: capitalize;
+                font-weight: 100;
+                cursor: pointer;
+            }
+
+            .one .img img {
+                width: 100% !important;
+                height: 143px !important;
+            }
+
+            .one .img {
+                width: 100% !important;
+                height: 143px !important;
+            }
+
+            .two .img {
+                height: 143px !important;
+            }
+
+            .three .img {
+                height: 143px !important;
+            }
+
+            .four .img img {
+                width: 30% !important;
+                height: 143px !important;
+            }
+
+            .four .img {
+                height: 143px !important;
+            }
+
+            .popup {
+                width: 100%;
+                background-color: #444444;
+                position: absolute;
+                z-index: 99999;
+                height: 850px;
+                opacity: .89;
+                display: none;
+            }
+
+            .pop {
+                width: 350px;
+                background-color: #777777;
+                position: fixed;
+                top: 200px;
+                left: 200px;
+                z-index: 999;
+                opacity: 1;
+                margin: auto 70px;
+                height: 210px;
+                border-radius: 50px;
+            }
+
+            .pop h2 {
+                color: #FFF;
+                font-size: 30px;
+                padding: 30px;
+                font-weight: 100;
+                line-height: 1.2;
+            }
+
+            .pop .close {
+                width: 30%;
+                height: 40px;
+                margin: auto 120px;
+                border-radius: 50px;
+                border: none;
+                font-size: 20px;
+                font-weight: 100;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+        }
+
+        @media (min-width:992px) {
+            .products {
+                width: 100%;
+                height: 990px;
+                padding-top: 80px;
+            }
+
+            .products h1 {
+                width: 100%;
+                text-align: center;
+                font-size: 60px;
+            }
+
+            .products .product {
+                width: 30%;
+                height: 350px;
+                color: #000;
+                margin: 0px 20px 30px 0px;
+                float: left;
+            }
+
+            .products .product .img {
+                width: 100%;
+                height: 225px !important;
+            }
+
+            .products .product .img img {
+                width: 100% !important;
+                height: 225px !important;
+            }
+
+            .products .product h3 {
+                display: block;
+                text-align: center;
+                font-size: 25px;
+                font-weight: 100;
+                line-height: 1.2;
+                padding: 20px;
+            }
+
+            .product span {
+                width: 150px;
+                height: 50px;
+                padding: 10px;
+                text-align: center;
+                border: 1px solid #000;
+                display: block;
+                margin: auto;
+                font-size: 20px;
+                text-transform: capitalize;
+                font-weight: 100;
+                cursor: pointer;
+            }
+
+            .popup {
+                width: 100%;
+                background-color: #444444;
+                position: absolute;
+                z-index: 99999;
+                height: 1010px;
+                opacity: .89;
+                display: none;
+            }
+
+            .pop {
+                width: 350px;
+                background-color: #777777;
+                position: fixed;
+                top: 103px;
+                z-index: 999;
+                opacity: 1;
+                margin: auto 70px;
+                height: 210px;
+                border-radius: 50px;
+                left: 250px;
+            }
+
+            .pop h2 {
+                color: #FFF;
+                font-size: 30px;
+                padding: 30px;
+                font-weight: 100;
+                line-height: 1.2;
+            }
+
+            .pop .close {
+                width: 30%;
+                height: 40px;
+                margin: auto 120px;
+                border-radius: 50px;
+                border: none;
+                font-size: 20px;
+                font-weight: 100;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+        }
+
+        @media (min-width:1200px)
+
+        /*large screen rules*/
+            {
+            .products {
+                width: 100%;
+                height: 1060px;
+                padding-top: 80px;
+            }
+
+            .products h1 {
+                width: 100%;
+                text-align: center;
+                font-size: 60px;
+            }
+
+            .mainProduct {
+                width: 100%;
+                height: 830px;
+            }
+
+            .products .product {
+                width: 30%;
+                height: 350px;
+                color: #000;
+                margin: 0px 20px 30px 0px;
+                float: left;
+            }
+
+            .products .product .img {
+                width: 100%;
+                height: 225px;
+            }
+
+            .products .product .img img {
+                width: 100% !important;
+            }
+
+            .products .product h3 {
+                display: block;
+                text-align: center;
+                font-size: 25px;
+                font-weight: 100;
+                line-height: 1.2;
+                padding: 20px;
+            }
+
+            .product span {
+                width: 150px;
+                height: 50px;
+                padding: 10px;
+                text-align: center;
+                border: 1px solid #000;
+                display: block;
+                margin: auto;
+                font-size: 20px;
+                text-transform: capitalize;
+                font-weight: 100;
+                cursor: pointer;
+            }
+
+            .one .img img {
+                width: 100% !important;
+                height: 225px !important;
+            }
+
+            .four .img img {
+                width: 100% !important;
+                height: 225px !important;
+            }
+
+            .popup {
+                width: 100%;
+                background-color: #444444;
+                position: absolute;
+                z-index: 99999;
+                height: 1060px;
+                opacity: .89;
+                display: none;
+            }
+
+            .pop {
+                width: 350px;
+                background-color: #777777;
+                position: fixed;
+                top: 103px;
+                z-index: 999;
+                opacity: 1;
+                margin: auto 70px;
+                height: 210px;
+                border-radius: 50px;
+                left: 400px;
+            }
+
+            .pop h2 {
+                color: #FFF;
+                font-size: 30px;
+                padding: 30px;
+                font-weight: 100;
+                line-height: 1.2;
+            }
+
+            .pop .close {
+                width: 30%;
+                height: 40px;
+                margin: auto 120px;
+                border-radius: 50px;
+                border: none;
+                font-size: 20px;
+                font-weight: 100;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+        }
+
+        /*End products*/
+        /*Start Subscribe*/
+        @media (min-width:420px) and (max-width: 749px)
+
+        /*mobile and tablets rules*/
+            {
+            .subscribe {
+                background: url('images/stock-vector-palm-trees-silhouette-retro-coconut-trees-hand-drawn-tropical-palm-silhouettes-vector-set-1677799216.jpg') content-box no-repeat;
+                width: 100%;
+                height: 290px;
+                margin-top: 20px;
+            }
+
+            .MainSubscribe {
+                width: 100%;
+                padding: 30px;
+                height: 200px;
+                margin: auto;
+                color: #FFF;
+                -webkit-box-sizing: border-box;
+                -mozkir-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            .MainSubscribe .subscribeContent {
+                float: left;
+                width: 100%;
+                text-align: center;
+            }
+
+            .MainSubscribe .subscribeContent h1 {
+                margin: 0px 0px 0px 0px;
+            }
+
+            .MainSubscribe .subscribeContent p {
+                width: 300px;
+                font-size: 17px;
+                text-align: center;
+                display: inline-block;
+            }
+
+            .subscribeBar {
+                width: 430px;
+                float: right;
+                padding: 15px;
+                height: 160px;
+                -webkit-box-sizing: border-box;
+                -mozkir-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            .subscribeBar input {
+                padding: 5px;
+                font-size: 20px;
+                border-radius: 20px;
+                width: 100%;
+                height: 50px;
+                margin-bottom: 5px;
+            }
+
+            .subscribeBar span {
+                padding: 10px;
+                width: 100%;
+                float: right;
+                font-size: 20px;
+                background-color: #C5A059;
+                border-radius: 20px;
+                text-align: center;
+                margin-top: 5px;
+            }
+        }
+
+        @media (min-width:750px) and (max-width:991px)
+
+        /*small screen rules*/
+            {
+            .subscribe {
+                background: url('images/stock-vector-palm-trees-silhouette-retro-coconut-trees-hand-drawn-tropical-palm-silhouettes-vector-set-1677799216.jpg') content-box no-repeat;
+                ;
+                width: 100%;
+                height: 290px;
+                margin-top: 20px;
+            }
+
+            .MainSubscribe {
+                width: 100%;
+                padding: 30px;
+                height: 200px;
+                margin: auto;
+                color: #FFF;
+                -webkit-box-sizing: border-box;
+                -mozkir-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            .MainSubscribe .subscribeContent {
+                float: left;
+                width: 100%;
+                text-align: center;
+            }
+
+            .MainSubscribe .subscribeContent h1 {
+                font-size: 45px;
+                margin: 0px 0px 0px 0px;
+            }
+
+            .MainSubscribe .subscribeContent p {
+                width: 60%;
+                font-size: 21px;
+                text-align: center;
+                display: inline-block;
+            }
+
+            .subscribeBar {
+                width: 100%;
+                float: right;
+                padding: 15px;
+                height: 135px;
+                -webkit-box-sizing: border-box;
+                -mozkir-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            .subscribeBar input {
+                padding: 5px;
+                font-size: 20px;
+                border-radius: 20px;
+                width: 100%;
+                height: 50px;
+                margin-bottom: 5px;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .subscribeBar span {
+                padding: 10px;
+                width: 100%;
+                float: right;
+                font-size: 20px;
+                background-color: #C5A059;
+                border-radius: 20px;
+                text-align: center;
+                margin-top: 5px;
+            }
+        }
+
+        @media (min-width:992px) and (max-width:1199px)
+
+        /*mediam screen rules*/
+            {
+            .subscribe {
+                background: url('images/stock-vector-palm-trees-silhouette-retro-coconut-trees-hand-drawn-tropical-palm-silhouettes-vector-set-1677799216.jpg') content-box no-repeat;
+                width: 100%;
+                height: 170px;
+                margin-top: 20px;
+                padding: 20px;
+            }
+
+            .MainSubscribe {
+                width: 100%;
+                height: 166px;
+                margin: auto;
+                color: #FFF;
+                -webkit-box-sizing: border-box;
+                -mozkir-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            .MainSubscribe .subscribeContent {
+                float: left;
+                width: 49%;
+                text-align: left;
+            }
+
+            .MainSubscribe .subscribeContent h1 {
+                font-size: 45px;
+                margin: 0px 0px 0px 0px;
+            }
+
+            .MainSubscribe .subscribeContent p {
+                width: 86%;
+                font-size: 21px;
+                text-align: left;
+                display: inline-block;
+            }
+
+            .subscribeBar {
+                width: 51%;
+                float: right;
+                padding: 15px;
+                height: 100px;
+                -webkit-box-sizing: border-box;
+                -mozkir-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            .subscribeBar input {
+                font-size: 20px;
+                border-radius: 20px;
+                width: 60%;
+                height: 50px;
+                margin-bottom: 5px;
+                padding: 20px;
+                margin-right: 20px;
+            }
+
+            .subscribeBar span {
+                padding: 10px;
+                width: 30%;
+                float: right;
+                font-size: 20px;
+                background-color: #C5A059;
+                border-radius: 20px;
+                text-align: center;
+                margin-top: 5px;
+            }
+        }
+
+        @media (min-width:1200px)
+
+        /*large screen rules*/
+            {
+            .subscribe {
+                background: url('images/stock-vector-palm-trees-silhouette-retro-coconut-trees-hand-drawn-tropical-palm-silhouettes-vector-set-1677799216.jpg') content-box no-repeat;
+                width: 100%;
+                height: 200px;
+            }
+
+            .MainSubscribe {
+                width: 100%;
+                padding: 30px;
+                height: 200px;
+                margin: auto;
+                color: #FFF;
+                -webkit-box-sizing: border-box;
+                -mozkir-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            .MainSubscribe .subscribeContent {
+                float: left;
+                width: 300px;
+            }
+
+            .MainSubscribe .subscribeContent h1 {
+                margin: 0px 0px 20px 0px;
+            }
+
+            .MainSubscribe .subscribeContent p {
+                width: auto;
+                font-size: 17px;
+            }
+
+            .subscribeBar {
+                width: 662px;
+                float: right;
+                padding: 30px;
+                height: 100px;
+                -webkit-box-sizing: border-box;
+                -mozkir-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            .subscribeBar input {
+                padding: 5px;
+                font-size: 20px;
+                border-radius: 20px;
+                width: 70%;
+                height: 50px;
+            }
+
+            .subscribeBar span {
+                padding: 10px;
+                width: 140px;
+                float: right;
+                font-size: 20px;
+                background-color: #C5A059;
+                border-radius: 20px;
+                text-align: center;
+            }
+        }
+
+        /*End Subscribe*/
+        /*Start aboutTeam*/
+        @media (min-width:420px)
+
+        /*mobile and tablets rules*/
+            {
+            .about {
+                background-color: #2c3e50;
+                width: 100%;
+                height: auto;
+            }
+
+            .AboutTeam {
+                display: inline-flex;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                padding-top: 60px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .AboutTeam .line {
+                width: 20px;
+                height: 200px;
+                display: inline-block;
+                background-color: #C5A059;
+                margin-right: 15px;
+            }
+
+            .AboutTeam h1 {
+                display: inline-flex;
+                flex-wrap: wrap;
+                align-items: center;
+                font-size: 78px;
+                color: #FFF;
+                text-transform: capitalize;
+                font-weight: 100;
+            }
+
+            .teamContent {
+                width: 82%;
+                height: auto;
+                margin: auto;
+                display: block;
+                padding: 20px;
+            }
+
+            .teamContent p {
+                color: #FFF;
+                font-size: 20px;
+                line-height: 2;
+                font-weight: 100;
+            }
+        }
+
+        @media (min-width:750px)
+
+        /*small screen rules*/
+            {
+            .about {
+                background-color: #2c3e50;
+                width: 100%;
+                height: auto;
+            }
+
+            .AboutTeam {
+                display: inline-flex;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                padding-top: 60px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .AboutTeam .line {
+                width: 20px;
+                height: 200px;
+                display: inline-block;
+                background-color: #C5A059;
+                margin-right: 15px;
+            }
+
+            .AboutTeam h1 {
+                display: inline-flex;
+                flex-wrap: wrap;
+                align-items: center;
+                font-size: 80px;
+                color: #FFF;
+                text-transform: capitalize;
+                font-weight: 100;
+            }
+
+            .teamContent {
+                width: 67%;
+                height: auto;
+                display: block;
+                padding: 20px;
+                margin: auto;
+            }
+
+            .teamContent p {
+                color: #FFF;
+                font-size: 20px;
+                line-height: 2;
+                font-weight: 100;
+            }
+        }
+
+        @media (min-width:992px)
+
+        /*mediam screen rules*/
+            {
+            .about {
+                background-color: #2c3e50;
+                width: 100%;
+                height: auto;
+            }
+
+            .AboutTeam {
+                display: inline-flex;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                padding-top: 60px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .AboutTeam .line {
+                width: 20px;
+                height: 200px;
+                display: inline-block;
+                background-color: #C5A059;
+                margin-right: 15px;
+            }
+
+            .AboutTeam h1 {
+                display: inline-flex;
+                flex-wrap: wrap;
+                align-items: center;
+                font-size: 80px;
+                color: #FFF;
+                text-transform: capitalize;
+                font-weight: 100;
+            }
+
+            .teamContent {
+                width: 60%;
+                height: auto;
+                display: block;
+                padding: 20px;
+                margin: auto;
+            }
+
+            .teamContent p {
+                color: #FFF;
+                font-size: 20px;
+                line-height: 2;
+                font-weight: 100;
+            }
+        }
+
+        @media (min-width:1200px)
+
+        /*large screen rules*/
+            {
+            .about {
+                background-color: #2c3e50;
+                width: 100%;
+                height: auto;
+            }
+
+            .AboutTeam {
+                display: inline-flex;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                padding-top: 60px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .AboutTeam .line {
+                width: 20px;
+                height: 200px;
+                display: inline-block;
+                background-color: #C5A059;
+                margin-right: 15px;
+            }
+
+            .AboutTeam h1 {
+                display: inline-flex;
+                flex-wrap: wrap;
+                align-items: center;
+                font-size: 80px;
+                color: #FFF;
+                text-transform: capitalize;
+                font-weight: 100;
+            }
+
+            .teamContent {
+                width: 55%;
+                height: auto;
+                display: block;
+                padding: 30px;
+                margin: auto;
+            }
+
+            .teamContent p {
+                color: #FFF;
+                font-size: 20px;
+                line-height: 2;
+                font-weight: 100;
+            }
+        }
+
+        /*End aboutTeam*/
+        /*sart contact us*/
+        @media(min-width: 420px) and (max-width: 751px)
+
+        /*large screen */
+            {
+            .contactUs {
+                width: 100%;
+                height: 1100px;
+                background-color: #002633;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            .ourproject {
+                width: 100%;
+                height: auto;
+            }
+
+            .ourproject h1 {
+                font-size: 35px;
+                font-weight: 100;
+                text-transform: uppercase;
+                color: #FFF;
+                text-align: center;
+            }
+
+            .ourproject article {
+                width: 100%;
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #FFF;
+                line-height: 1.4;
+                margin-bottom: 20px;
+            }
+
+            .ourproject article p {
+                font-size: 15px;
+            }
+
+            .ourproject article ul {
+                padding: 0px;
+            }
+
+            .ourproject article ul li {
+                padding: 1px;
+                margin: 3px 3px;
+            }
+
+            .ourproject p b {
+                font-weight: 200;
+            }
+
+            .contact {
+                width: 100%;
+                height: auto;
+                float: left;
+                margin-left: 20px;
+            }
+
+            .contact h1,
+            .massage h1 {
+                font-size: 35px;
+                font-weight: 100;
+                text-transform: uppercase;
+                color: #FFF;
+            }
+
+            .line {
+                display: inline-block;
+                width: 100%;
+                height: auto;
+            }
+
+            .contact p i {
+                color: #C5A059;
+                margin-right: 5px;
+                display: inline-block;
+            }
+
+            .contact p {
+                color: #ceceee;
+                font-size: 20px;
+                width: 100%;
+                display: inline-block;
+                margin-bottom: 30px;
+            }
+
+            .contact p span {
+                font-weight: 100;
+                font-size: 15px;
+            }
+
+            .contact p b {
+                font-weight: 100;
+                text-transform: uppercase;
+            }
+
+            .massage {
+                width: 100%;
+                height: auto;
+                float: left;
+                margin-left: 20px;
+            }
+
+            .massage .formation {
+                width: 100%;
+                height: 260px;
+                margin: 0px;
+            }
+
+            .massage .formation input,
+            textarea {
+                color: #FFF;
+                width: 90%;
+                height: 50px;
+                background: none;
+                border: 1px solid #002633;
+                border-left: 1px solid #C5A059;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+
+            .massage .formation button {
+                width: 40%;
+                height: 25px;
+                border: none;
+                border-radius: 30px;
+                text-align: center;
+                font-size: 17px;
+                text-transform: capitalize;
+                display: block;
+            }
+        }
+
+        @media(min-width: 750px)
+
+        /*large screen */
+            {
+            .contactUs {
+                width: 100%;
+                height: 1050px;
+                background-color: #002633;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            .ourproject {
+                width: 100%;
+                height: auto;
+                /* float: left; */
+                margin-left: 20px;
+                text-align: left;
+            }
+
+            .ourproject h1 {
+                font-size: 35px;
+                font-weight: 100;
+                text-transform: uppercase;
+                color: #FFF;
+            }
+
+            .ourproject article {
+                width: 100%;
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #FFF;
+                line-height: 1.4;
+                margin-bottom: 20px;
+            }
+
+            .ourproject article p {
+                font-size: 15px;
+            }
+
+            .ourproject article ul {
+                padding: 0px;
+            }
+
+            .ourproject article ul li {
+                padding: 1px;
+                margin: 3px 3px;
+            }
+
+            .ourproject p b {
+                font-weight: 200;
+            }
+
+            .contact {
+                width: 50%;
+                height: auto;
+                margin-left: 20px;
+            }
+
+            .contact h1 {
+                font-size: 35px;
+                font-weight: 100;
+                text-transform: uppercase;
+                color: #FFF;
+            }
+
+            .line {
+                display: inline-block;
+                width: 100%;
+                height: auto;
+            }
+
+            .contact p i {
+                color: #C5A059;
+                margin-right: 5px;
+                display: inline-block;
+            }
+
+            .contact p {
+                color: #ceceee;
+                font-size: 20px;
+                width: 128%;
+                display: inline-block;
+                margin-bottom: 30px;
+            }
+
+            .contact p span {
+                font-weight: 100;
+                font-size: 15px;
+            }
+
+            .contact p b {
+                font-weight: 100;
+                text-transform: uppercase;
+            }
+
+            .massage {
+                width: 100%;
+                height: auto;
+                float: left;
+                margin-left: 20px;
+            }
+
+            .massage h1 {
+                font-size: 26px;
+                font-weight: 100;
+                text-transform: uppercase;
+                color: #FFF;
+                display: block;
+                margin: auto;
+                margin-bottom: 20px;
+                text-align: left;
+            }
+
+            .massage .formation {
+                width: 100%;
+                height: auto;
+                margin: 0px;
+            }
+
+            .massage .formation input,
+            textarea {
+                color: #FFF;
+                font-size: 20px;
+                width: 50%;
+                height: 70px;
+                background: none;
+                border: 1px solid #002633;
+                border-left: 1px solid #C5A059;
+                margin-bottom: 20px;
+                padding: 10px;
+                display: block;
+            }
+
+            .massage .formation button {
+                width: 40%;
+                height: 25px;
+                border: none;
+                border-radius: 30px;
+                text-align: center;
+                font-size: 17px;
+                text-transform: capitalize;
+                margin: 0px;
+                display: block
+            }
+        }
+
+        @media(min-width: 992px) and (max-width: 1199px)
+
+        /*large screen */
+            {
+            .contactUs {
+                width: 100%;
+                height: 700px;
+                background-color: #002633;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            .ourproject {
+                width: 40%;
+                height: auto;
+                /* float: left; */
+                margin-left: 20px;
+                text-align: left;
+            }
+
+            .ourproject h1 {
+                font-size: 35px;
+                font-weight: 100;
+                text-transform: uppercase;
+                color: #FFF;
+            }
+
+            .ourproject article {
+                width: 100%;
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #FFF;
+                line-height: 1.4;
+                margin-bottom: 20px;
+            }
+
+            .ourproject article p {
+                font-size: 15px;
+            }
+
+            .ourproject article ul {
+                padding: 0px;
+            }
+
+            .ourproject article ul li {
+                padding: 1px;
+                margin: 3px 3px;
+            }
+
+            .ourproject p b {
+                font-weight: 200;
+            }
+
+            .contact {
+                width: 50%;
+                height: auto;
+                float: right;
+                margin-left: 20px;
+            }
+
+            .contact h1 {
+                font-size: 35px;
+                font-weight: 100;
+                text-transform: uppercase;
+                color: #FFF;
+            }
+
+            .line {
+                display: inline-block;
+                width: 100%;
+                height: auto;
+            }
+
+            .contact p i {
+                color: #C5A059;
+                margin-right: 5px;
+                display: inline-block;
+            }
+
+            .contact p {
+                color: #ceceee;
+                font-size: 20px;
+                width: 100%;
+                display: inline-block;
+                margin-bottom: 30px;
+            }
+
+            .contact p span {
+                font-weight: 100;
+                font-size: 15px;
+            }
+
+            .contact p b {
+                font-weight: 100;
+                text-transform: uppercase;
+            }
+
+            .massage {
+                width: 100%;
+                height: auto;
+                float: left;
+                margin-left: 20px;
+            }
+
+            .massage h1 {
+                font-size: 26px;
+                font-weight: 100;
+                text-transform: uppercase;
+                color: #FFF;
+                text-align: center;
+                margin: 29px auto;
+            }
+
+            .massage .formation {
+                width: 100%;
+                height: auto;
+                margin: 0px;
+            }
+
+            .massage .formation input,
+            textarea {
+                color: #FFF;
+                font-size: 20px;
+                width: 30%;
+                height: 50px;
+                background: none;
+                border: 1px solid #002633;
+                border-left: 1px solid #C5A059;
+                margin-bottom: 20px;
+                padding: 10px;
+                display: block;
+            }
+
+            .massage .formation button {
+                width: 20%;
+                height: 25px;
+                border: none;
+                border-radius: 30px;
+                text-align: center;
+                font-size: 17px;
+                text-transform: capitalize;
+            }
+        }
+
+        @media(min-width: 1200px)
+
+        /*large screen */
+            {
+            .contactUs {
+                width: 100%;
+                height: 500px;
+                background-color: #002633;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            .ourproject {
+                width: 30%;
+                height: auto;
+                float: left;
+                margin-right: 20px;
+            }
+
+            .ourproject h1 {
+                font-size: 35px;
+                font-weight: 100;
+                text-transform: uppercase;
+                color: #FFF;
+            }
+
+            .ourproject article p {
+                font-size: 15px;
+            }
+
+            .ourproject article ul {
+                padding: 0px;
+            }
+
+            .ourproject article ul li {
+                padding: 1px;
+                margin: 3px 3px;
+            }
+
+            .ourproject p b {
+                font-weight: 200;
+            }
+
+            .contact {
+                width: 41%;
+                height: auto;
+                float: left;
+                margin-left: 20px;
+            }
+
+            .contact h1,
+            .massage h1 {
+                font-size: 35px;
+                font-weight: 100;
+                text-transform: uppercase;
+                color: #FFF;
+                margin: 29px auto;
+            }
+
+            .line {
+                display: inline-block;
+                width: 100%;
+                height: auto;
+            }
+
+            .contact p i {
+                color: #C5A059;
+                margin-right: 5px;
+                display: inline-block;
+            }
+
+            .contact p {
+                color: #ceceee;
+                font-size: 20px;
+                width: 100%;
+                display: inline-block;
+                margin-bottom: 30px;
+            }
+
+            .contact p span {
+                font-weight: 100;
+                font-size: 15px;
+            }
+
+            .contact p b {
+                font-weight: 100;
+                text-transform: uppercase;
+            }
+
+            .massage {
+                width: 19%;
+                height: auto;
+                float: left;
+                margin-left: 20px;
+            }
+
+            .massage h1 {
+                font-size: 35px;
+                font-weight: 100;
+                text-transform: uppercase;
+                color: #FFF;
+                margin: 29px auto;
+            }
+
+            .massage .formation {
+                width: 100%;
+                height: 250px;
+                margin: 0px;
+            }
+
+            .massage .formation input,
+            textarea {
+                color: #FFF;
+                width: 100%;
+                height: 70px;
+                background: none;
+                border: 1px solid #002633;
+                border-left: 1px solid #C5A059;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+
+            .massage .formation button {
+                width: 100%;
+                height: 25px;
+                border: none;
+                border-radius: 30px;
+                text-align: center;
+                font-size: 20px;
+                text-transform: capitalize;
+                margin-top: 20px;
+            }
+        }
+
+        /*end contact us*/
+
+    </style>
+</head>
+
+<body>
+    <!--Start Header-->
+    <div class="header">
+        <div class="overlay">
+            <div class="borderBottom">
+                <div class="container">
+                    <div class="headTop">
+                        <h1>handeMade business</h1>
+                        <ul class="hidden-xs">
+                            <li><a href="index.html">HOME</a> </li>
+                            <li><a href="products.html" class="active">PRODUCTS</a></li>
+                            <li><a href="whereweare.html">where we are</a></li>
+                            <li><a href="gallery.html">gallery</a></li>
+                            <li><a href="aboutproject.html">about project</a></li>
+                        </ul>
+                        <div class="visiable-xs form">
+                            <div class="list" id="listName">
+                                <ul>
+                                    <i class="fas fa-chevron-down"></i>
+                                    <li> menu </li>
+                                    <ul class="slider">
+                                        <li><a href="index.html">HOME</a></li>
+                                        <li><a href="products.html">PRODUCTS</a></li>
+                                        <li><a href="whereweare.html">where we are</a></li>
+                                        <li><a href="gallery.html">gallery</a></li>
+                                        <li><a href="aboutproject.html">about project</a></li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="headMid">
+                    <h1>HandMade Business</h1>
+                    <h2><a href="aboutproject.html">learn more</a></h2>
+                </div>
+            </div>
+            <span id="toTop"><i class="fas fa-rocket fa-3x"></i></span>
+        </div>
+    </div>
+    <!--End Header-->
+    <!--Start Product Part-->
+    <div class="popup">
+        <div class="pop">
+            <h2>sorry this feateaur is not supported in our project</h2>
+            <button class="close">close</button>
+        </div>
+    </div>
+    <div class="products">
+        <h1>faculty project</h1>
+        <div class="container">
+            <div class="mainProduct">
+                <div class="product one">
+                    <div class="img">
+                        <img src="images/one.jpg" alt="one">
+                    </div>
+                    <h3>Kato Nobi</h3>
+                    <span class="order one">order now</span>
+                </div>
+                <div class="product two">
+                    <div class="img">
+                        <img src="images/two.jpg" alt="two">
+                    </div>
+                    <h3> African suitcase</h3>
+                    <span class="order two">order now</span>
+                </div>
+                <div class="product three">
+                    <div class="img">
+                        <img src="images/three.jpg" alt="one">
+                    </div>
+                    <h3>Pharaonic suitcase</h3>
+                    <span class="order three">order now</span>
+                </div>
+                <div class="product four">
+                    <div class="img">
+                        <img src="images/four.jpg" alt="one">
+                    </div>
+                    <h3>Napata</h3>
+                    <span class="order four">order now</span>
+                </div>
+                <div class="product two">
+                    <div class="img">
+                        <img src="images/five.jpg" alt="one">
+                    </div>
+                    <h3>Nubian suitcase</h3>
+                    <span class="order five">order now</span>
+                </div>
+                <div class="product one">
+                    <div class="img">
+                        <img src="images/six.jpg" alt="one">
+                    </div>
+                    <h3>Gazlan</h3>
+                    <span class="order six">order now</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Product Part-->
+    <!--Start Subscribe-->
+    <div class="subscribe">
+        <div class="overlayA">
+            <div class="container">
+                <div class="MainSubscribe">
+                    <div class="subscribeContent">
+                        <h1>subscribe</h1>
+                        <p>Subscribe faculty project to get offers and about our new products.</p>
+                    </div>
+                    <div class="subscribeBar">
+                        <input type="email" value="subscribe">
+                        <span>subscribe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Subscribe-->
+    <!--Start AboutTeam-->
+    <div class="about">
+        <div class="container">
+            <div class="AboutTeam">
+                <div class="line"></div>
+                <h1>about team</h1>
+            </div>
+            <div class="teamContent">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, nemo saepe veritatis, ratione
+                    porro esse optio eos quam necessitatibus, quo ad reprehenderit laborum quia eaque ipsa beatae. Sunt,
+                    possimus cumque mollitia nulla sint commodi qui quas eveniet omnis hic odio dolores excepturi ad,
+                    consectetur, explicabo nisi voluptates! Deserunt, voluptates neque.</p>
+            </div>
+        </div>
+    </div>
+    <!--End AboutTeam-->
+    <!--start contact us-->
+    <div class="contactUs">
+        <div class="container">
+            <div class="padding">
+                <div class="ourproject">
+                    <h1>our project</h1>
+                    <article>
+                        <p> Our idea is characterized by handicrafts from palm remnants and we add with it the leather,
+                            whether natural or artificial, and it goes through several steps to obtain the product </p>
+                        <ul>
+                            <li> After the date harvest season, we take the bunch and peel it.</li>
+                            <li> We take out the lameen from it and separate it from each other in the form of strings.
+                            </li>
+                            <li>We put lambs and water to facilitate their formation.</li>
+                            <li>We put it on the loom with a specific craft, and then mix it with the leather and make
+                                the product to be shaped from it.</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="contact">
+                    <h1>contact us</h1>
+                    <div class="line">
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <b>addres:</b>
+                            <span>Saad Zaghloul street, behind the Aswan police station</span>
+                        </p>
+                    </div>
+                    <div class="line">
+                        <p>
+                            <i class="fas fa-phone"></i>
+                            <b>phone:</b>
+                            <span>01101670002</span>
+                        </p>
+                    </div>
+                    <div class="line">
+                        <p>
+                            <i class="fas fa-envelope-square"></i>
+                            <b>mail:</b>
+                            <span>handmade_busniss@gmail.com</span>
+                        </p>
+                    </div>
+                    <div class="line">
+                        <p>
+                            <i class="fab fa-facebook-f"></i>
+                        </p>
+                    </div>
+                    <div class="line">
+                        <p>
+                            <i class="fab fa-youtube"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="massage">
+                    <h1>leave a massage</h1>
+                    <form class="formation">
+                        <input type="text" placeholder="type your name">
+                        <input type="email" placeholder="type your email">
+                        <textarea name="textarea" id="textarea" cols="80" rows="10"
+                            placeholder="please write your massage"></textarea>
+                        <button>send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end contact us-->
+    <script src="js/custom.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/customjq.js"></script>
+    <script type="text/javascript">
+
+        // learn more
+
+        $(".headMid h2").mouseenter(function () {
+
+            $(".headMid h2").css("backgroundColor", "#C5A059")
+            $(".headMid h2").css("color", "#FFF")
+            $(".headMid h2").css("transition", "500ms")
+
+        })
+        $(".headMid h2").mouseleave(function () {
+
+            $(".headMid h2").css("backgroundColor", "")
+            $(".headMid h2").css("color", "#FFF")
+            $(".headMid h2").css("transition", "500ms")
+        })
+
+
+        $('.order').click(function () {
+            $('.popup').fadeIn(500)
+        })
+
+        $('.close').click(function () {
+            $('.popup').fadeOut(500)
+        })
+
+        $('.order.one').mouseenter(function () {
+
+            $('.order.one').css('backgroundColor', '#C5A059')
+            $('.order.one').css('color', '#FFF')
+            $(".order.one").css("transition", "500ms")
+        });
+        $('.order.one').mouseleave(function () {
+
+            $('.order.one').css('backgroundColor', '#fff')
+            $('.order.one').css('color', '#000')
+            $(".order.one").css("transition", "500ms")
+        });
+
+
+        $('.order.two').mouseenter(function () {
+            $('.order.two').css('backgroundColor', '#C5A059')
+            $('.order.two').css('color', '#FFF')
+            $(".order.two").css("transition", "500ms")
+        });
+        $('.order.two').mouseleave(function () {
+            $('.order.two').css('backgroundColor', '#fff')
+            $('.order.two').css('color', '#000')
+            $(".order.two").css("transition", "500ms")
+        });
+
+
+        $('.order.three').mouseenter(function () {
+
+            $('.order.three').css('backgroundColor', '#C5A059')
+            $('.order.three').css('color', '#FFF')
+            $(".order.three").css("transition", "500ms")
+        });
+        $('.order.three').mouseleave(function () {
+
+            $('.order.three').css('backgroundColor', '#fff')
+            $('.order.three').css('color', '#000')
+            $(".order.three").css("transition", "500ms")
+        });
+
+
+        $('.order.four').mouseenter(function () {
+            $('.order.four').css('backgroundColor', '#C5A059')
+            $('.order.four').css('color', '#FFF')
+            $(".order.four").css("transition", "500ms")
+        });
+        $('.order.four').mouseleave(function () {
+            $('.order.four').css('backgroundColor', '#fff')
+            $('.order.four').css('color', '#000')
+            $(".order.four").css("transition", "500ms")
+        });
+
+
+
+        $('.order.five').mouseenter(function () {
+            $('.order.five').css('backgroundColor', '#C5A059')
+            $('.order.five').css('color', '#FFF')
+            $(".order.five").css("transition", "500ms")
+        });
+        $('.order.five').mouseleave(function () {
+            $('.order.five').css('backgroundColor', '#fff')
+            $('.order.five').css('color', '#000')
+            $(".order.five").css("transition", "500ms")
+        });
+
+
+        $('.order.six').mouseenter(function () {
+            $('.order.six').css('backgroundColor', '#C5A059')
+            $('.order.six').css('color', '#FFF')
+            $(".order.six").css("transition", "500ms")
+        });
+        $('.order.six').mouseleave(function () {
+            $('.order.six').css('backgroundColor', '#fff')
+            $('.order.six').css('color', '#000')
+            $(".order.six").css("transition", "500ms")
+        });
+    </script>
+</body>
+
+</html>
