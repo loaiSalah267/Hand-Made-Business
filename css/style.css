@@ -478,6 +478,8 @@
     }
 }
 /*End Header*/
+
+/*Start product*/
 .product
 {
     width: 100%;
@@ -831,7 +833,7 @@
     .product
     {
         width: 100%;
-        height: 2085px;
+        height: 1185px;
     }
     .product .container h1
     {
@@ -849,10 +851,9 @@
     }
     .product .container .contain
     {
-        width:  50%;
-        height: 1940px;
+        width:  100%;
+        height: 1125px;
         display: inline-block; 
-        margin: auto 184px;  
     }
     .product .container .ProductImg
     {
@@ -2080,7 +2081,7 @@
     .contactUs
     {
         width: 100%;
-        height: 1050px;
+        height: 1100px;
         background-color: #002633;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
