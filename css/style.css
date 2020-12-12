@@ -785,12 +785,12 @@
     }
     .poping
     {
-        width: 400px;
-        height: 900px;
+        width: 800px;
+        height: 920px;
         position: absolute;
         z-index: 999;
         top: 0px;
-        left: 200px;
+        left: 85px;
         opacity: 1;
     }
     .popimg.one .poping
@@ -825,10 +825,12 @@
         width: 200px;
         height: 100px;
         color: #FFF;
-        position: absolute;
         top: 10px;
-        left: 40px;
+        left: 120px;
         cursor: pointer;
+        z-index: 99999;
+        position: relative;
+
     }
     .product
     {
